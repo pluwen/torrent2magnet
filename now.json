@@ -1,17 +1,16 @@
 {
-    "version": 2,
-    "name": "torrent2magnet",
-    "scope": "messycode",
-    "builds": [
-        { "src": "*.php", "use": "now-php" },
-        { "src": "asset/*", "use": "@now/static" },
-        { "src": "asset/uploadify/*", "use": "@now/static" },
-        { "src": "*.html", "use": "@now/static" },
-        { "src": "*.ico", "use": "@now/static" }
-    ],
-    "routes": [
-        { "handle": "filesystem" },
-        { "src": "/.*", "status": 404, "dest": "/404.html" }
-    ],
-    "alias": ["torrent2magnet.ixxoo.me"]
-  }
+  "version": 2,
+  "name": "p2p",
+  "scope": "messycode",
+  "builds": [
+    { "src": "*.php", "use": "now-php" },
+    { "src": "asset/*", "use": "@now/static" },
+    { "src": "asset/uploadify/*", "use": "@now/static" },
+    { "src": "*.html", "use": "@now/static" },
+    { "src": "*.ico", "use": "@now/static" }
+  ],
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/.*", "status": 404, "dest": "/404.html" }
+  ]
+}
